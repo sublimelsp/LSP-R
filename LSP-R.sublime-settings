@@ -1,0 +1,15 @@
+{
+    "command": [
+        "$r_binary",
+        "--slave",
+        "-e",
+        "languageserver::run()"
+    ],
+    "languageId": "r",
+    "document_selector": "source.r | text.html.markdown.rmarkdown",
+    "initializationOptions": {},
+    "settings": {
+        "diagnostics": true,
+        "debug": false
+    }
+}
