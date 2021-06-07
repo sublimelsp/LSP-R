@@ -1,6 +1,8 @@
 import sublime
 
-from LSP.plugin.core.sessions import AbstractPlugin
+from LSP.plugin import register_plugin
+from LSP.plugin import unregister_plugin
+from LSP.plugin import AbstractPlugin
 
 
 class LspRPlugin(AbstractPlugin):
@@ -18,3 +20,11 @@ class LspRPlugin(AbstractPlugin):
     def additional_variables(cls):
         # TODO: don't hardcode
         return {"r_binary": "R"}
+
+
+def plugin_loaded():
+    register_plugin(LspRPlugin)
+
+
+def plugin_unloaded():
+    unregister_plugin(LspRPlugin)
