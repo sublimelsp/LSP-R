@@ -19,7 +19,10 @@ class LspRPlugin(AbstractPlugin):
     @classmethod
     def additional_variables(cls):
         # TODO: don't hardcode
-        return {"r_binary": "R"}
+        return {
+            "r_binary": "R",
+            "lang": "en_US.UTF-8"
+        }
 
 
 class rlangPlugin(AbstractPlugin):
@@ -29,6 +32,7 @@ class rlangPlugin(AbstractPlugin):
 
     @classmethod
     def configuration(cls):
+        print("rlang is disabled by LSP-R.")
         basename = "rlang.hidden-sublime-settings"
         filepath = "Packages/LSP-R/{}".format(basename)
         return sublime.load_settings(basename), filepath

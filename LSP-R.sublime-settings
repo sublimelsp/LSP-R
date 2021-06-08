@@ -11,5 +11,8 @@
     "settings": {
         "diagnostics": true,
         "debug": false
+    },
+    "env": {
+        "LANG": "$lang"
     }
 }
