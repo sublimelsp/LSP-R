@@ -1,12 +1,12 @@
 # LSP-R
 
-This is a helper package to provide [LSP](https://github.com/sublimelsp/LSP) configuration to R (languageserver)[https://github.com/REditorSupport/languageserver].
+This is a helper package to provide [LSP](https://github.com/sublimelsp/LSP) configuration to R [languageserver](https://github.com/REditorSupport/languageserver).
 
 To use this package, you must have
 
 - The [LSP](https://github.com/sublimelsp/LSP) package
 - An R installation
-- And have (languageserver)[https://github.com/REditorSupport/languageserver] installed.
+- And have [languageserver](https://github.com/REditorSupport/languageserver) installed.
 
 ## Applicable Selectors
 
