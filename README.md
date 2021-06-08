@@ -4,6 +4,7 @@ This is a helper package to provide [LSP](https://github.com/sublimelsp/LSP) con
 
 To use this package, you must have
 
+- Sublime Text 4 or above
 - The [LSP](https://github.com/sublimelsp/LSP) package
 - An R installation
 - And have [languageserver](https://github.com/REditorSupport/languageserver) installed.
