@@ -8,7 +8,7 @@
     "document_selector": "source.r | text.html.markdown.rmarkdown",
     "initializationOptions": {},
     "settings": {
-        // Enable R Language Server
+        // Debug R Language Server
         "r.lsp.debug": false,
         // Enable Diagnostics
         "r.lsp.diagnostics": true,
