@@ -1,0 +1,5 @@
+{
+    "languageId": "r",
+    "document_selector": "source.r | text.html.markdown.rmarkdown",
+    "enabled": false
+}
