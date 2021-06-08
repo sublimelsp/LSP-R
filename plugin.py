@@ -5,6 +5,23 @@ from LSP.plugin import unregister_plugin
 from LSP.plugin import AbstractPlugin
 
 
+def get_r_binary():
+    r_binary = None
+    window = sublime.active_window()
+    if window:
+        view = window.active_view()
+        if view:
+            r_ide_project_settings = view.settings().get("R-IDE", {})
+            if "r_binary" in r_ide_project_settings:
+                r_binary = r_ide_project_settings["r_binary"]
+    if not r_binary:
+        ride_settings = sublime.load_settings("R-IDE.sublime-settings")
+        r_binary = ride_settings.get("r_binary")
+    if not r_binary:
+        r_binary = "R"
+    return r_binary
+
+
 class LspRPlugin(AbstractPlugin):
     @classmethod
     def name(cls):
@@ -18,10 +35,8 @@ class LspRPlugin(AbstractPlugin):
 
     @classmethod
     def additional_variables(cls):
-        # TODO: don't hardcode
         return {
-            "r_binary": "R",
-            "lang": "en_US.UTF-8"
+            "r_binary": get_r_binary()
         }
 
 
