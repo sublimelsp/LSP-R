@@ -5,7 +5,7 @@
         "-e",
         "languageserver::run()"
     ],
-    "document_selector": "source.r | text.html.markdown.rmarkdown",
+    "selector": "source.r | text.html.markdown.rmarkdown",
     "initializationOptions": {},
     "settings": {
         // Debug R Language Server
