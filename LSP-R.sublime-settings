@@ -1,6 +1,6 @@
 {
     "command": [
-        "$r_binary",  // sync with R-IDE, fallback to "R" if not found.
+        "R",
         "--slave",
         "-e",
         "languageserver::run()"
@@ -8,8 +8,10 @@
     "document_selector": "source.r | text.html.markdown.rmarkdown",
     "initializationOptions": {},
     "settings": {
+        // Enable R Language Server
+        "r.lsp.debug": false,
+        // Enable Diagnostics
         "r.lsp.diagnostics": true,
-        "r.lsp.debug": false
     },
     "env": {
         "LANG": "en_US.UTF-8"
