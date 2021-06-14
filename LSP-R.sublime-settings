@@ -12,6 +12,8 @@
         "r.lsp.debug": false,
         // Enable Diagnostics
         "r.lsp.diagnostics": true,
+        // Disable rich markdown based documentation
+        "r.lsp.rich_documentation": false
     },
     "env": {
         "LANG": "en_US.UTF-8"
