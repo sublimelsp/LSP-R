@@ -6,7 +6,6 @@
         "languageserver::run()"
     ],
     "selector": "source.r | text.html.markdown.rmarkdown",
-    "initialization_options": {},
     "settings": {
         // Debug R Language Server
         "r.lsp.debug": false,
