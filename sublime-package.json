@@ -30,7 +30,12 @@
                       "default": true,
                       "description": "Enable Diagnostics",
                       "type": "boolean"
-                    }
+                    },
+                    "r.lsp.rich_documentation": {
+                      "default": false,
+                      "description": "Disable rich markdown based documentation",
+                      "type": "boolean"
+                    },
                   }
                 }
               }
