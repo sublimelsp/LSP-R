@@ -1,8 +1,9 @@
-import sublime
+from __future__ import annotations
 
+import sublime
+from LSP.plugin import AbstractPlugin
 from LSP.plugin import register_plugin
 from LSP.plugin import unregister_plugin
-from LSP.plugin import AbstractPlugin
 
 
 class LspRPlugin(AbstractPlugin):
