@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/sublimelsp/lsp_smoke_test/v1/smoke.schema.json
+file: sample.R
+# The diagnostics come from lintr.
+expected_diagnostics:
+  source: lintr
+  message: Use <-
